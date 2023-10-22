@@ -16,6 +16,7 @@ public class SimpleInstantiationStrategy implements InstantiationStrategy {
         Class clazz = beanDefinition.getBeanClass();
         try {
             if (null != ctor) {
+                //return ctor.newInstance(args);
                 return clazz.getDeclaredConstructor(ctor.getParameterTypes()).newInstance(args);
             } else {
                 return clazz.getDeclaredConstructor().newInstance();
