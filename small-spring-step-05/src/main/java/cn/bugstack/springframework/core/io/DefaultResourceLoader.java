@@ -5,6 +5,10 @@ import cn.hutool.core.lang.Assert;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * 默认的资源加载器
+ * 解析地址，根据地址类型构建对应的resource对象
+ */
 public class DefaultResourceLoader implements ResourceLoader {
 
     @Override

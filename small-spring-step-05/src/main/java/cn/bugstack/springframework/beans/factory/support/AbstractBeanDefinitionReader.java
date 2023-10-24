@@ -7,8 +7,8 @@ import cn.bugstack.springframework.core.io.ResourceLoader;
  * Abstract base class for bean definition readers which implement
  * the {@link BeanDefinitionReader} interface.
  * <p>
- *
- *
+ * BeanDefinition读取器抽象类，定义了资源读取器和BeanDefinition注册器两个核心组件
+ * getRegistry()、getResourceLoader()，都是用于提供给后面三个方法的工具，加载和注册，这两个方法的实现会包装到抽象类中，以免污染具体的接口实现方法。
  *
  *
  *

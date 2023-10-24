@@ -1,0 +1,10 @@
+# 本章核心
+- 属性填充
+# 定义属性
+- PropertyValue
+- PropertyValues
+- BeanReference
+# beanDefinition补全
+- 添加PropertyValue属性集合
+# 属性填充
+- applyPropertyValues

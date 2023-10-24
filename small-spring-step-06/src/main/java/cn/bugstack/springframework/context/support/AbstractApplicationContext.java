@@ -17,7 +17,8 @@ import java.util.Map;
  * <p>
  * 抽象应用上下文
  * <p>
- *
+ * BeanFactoryPostProcessor是对beanFactory操作
+ * BeanPostProcessor是加入到beanFactory里
  *
  *
  *

@@ -1,5 +1,8 @@
 package cn.bugstack.springframework.core.io;
 
+/**
+ * 包装资源加载器：包装底层不同类型的Resource，自动选择
+ */
 public interface ResourceLoader {
 
     /**

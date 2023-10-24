@@ -8,7 +8,7 @@ import cn.bugstack.springframework.beans.factory.ConfigurableListableBeanFactory
  * adapting the bean property values of the context's underlying bean factory.
  *
  * 允许自定义修改 BeanDefinition 属性信息
- *
+ * BeanFactoryPostProcessor是对beanFactory操作
  *
  *
  *

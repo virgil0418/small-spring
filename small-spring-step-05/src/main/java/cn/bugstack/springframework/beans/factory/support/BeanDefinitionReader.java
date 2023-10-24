@@ -6,7 +6,7 @@ import cn.bugstack.springframework.core.io.ResourceLoader;
 
 /**
  * Simple interface for bean definition readers.
- *
+ * BeanDefinition读取器，通过实现这个接口或实现抽象类实现不同方式地读取
  *
  *
  *
