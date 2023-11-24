@@ -70,9 +70,11 @@ public abstract class AbstractApplicationEventMulticaster implements Application
 
         // 按照 CglibSubclassingInstantiationStrategy、SimpleInstantiationStrategy 不同的实例化类型，需要判断后获取目标 class
         Class<?> targetClass = ClassUtils.isCglibProxyClass(listenerClass) ? listenerClass.getSuperclass() : listenerClass;
+        //获取泛型接口类型listener<event>
         Type genericInterface = targetClass.getGenericInterfaces()[0];
-
+        //获取泛型类型event
         Type actualTypeArgument = ((ParameterizedType) genericInterface).getActualTypeArguments()[0];
+        //获取类型名字
         String className = actualTypeArgument.getTypeName();
         Class<?> eventClassName;
         try {

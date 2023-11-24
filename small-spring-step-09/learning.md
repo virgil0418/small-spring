@@ -1,0 +1,4 @@
+# 本章核心
+## factoryBean
+- 通过spring容器获取的都是bean，如果我们的bean没那么简单，而是要经过工厂生成，那么我们想直接获得工厂制造的bean就要通过集成factoryBean获得
+- 也可以通过spring的getBean方法获取工厂bean本身，但是一般都是直接获取工厂生产的bean
